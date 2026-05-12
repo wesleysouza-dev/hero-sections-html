@@ -1,100 +1,103 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
+    <base href="/01/" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <title>Hero Section 01 - Bikee</title>
-  </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    body {
-      /* background: url("bg-hero.jpg") no-repeat center center/cover; */
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-      position: relative;
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: -30px;
-        left: 0;
-        width: 100%;
-        height: 180px;
-        background: linear-gradient(
-          rgba(10, 71, 109, 1) 0%,
-          rgba(4, 26, 39, 0) 100%
-        );
+      body {
+        /* background: url("bg-hero.jpg") no-repeat center center/cover; */
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -30px;
+          left: 0;
+          width: 100%;
+          height: 180px;
+          background: linear-gradient(
+            rgba(10, 71, 109, 1) 0%,
+            rgba(4, 26, 39, 0) 100%
+          );
+          z-index: 2;
+          filter: blur(10px);
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 90%;
+          background: url("mask.svg") no-repeat center bottom / 100% auto;
+        }
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .container {
+        max-width: 1380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 30px 0 20px 0;
+        position: relative;
         z-index: 2;
-        filter: blur(10px);
       }
 
-      &::after {
-        content: "";
+      .hero-text {
+        margin-top: 20vh;
+      }
+
+      .info-footer {
+        margin-top: auto;
+      }
+
+      .icon-big {
         position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 90%;
-        background: url("mask.svg") no-repeat center bottom / 100% auto;
+        bottom: -35%;
+        right: -10%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
       }
-    }
 
-    img {
-      max-width: 100%;
-    }
-
-    .container {
-      max-width: 1380px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 100vw;
-      height: 100vh;
-      margin: 0 auto;
-      padding: 30px 0 20px 0;
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero-text {
-      margin-top: 20vh;
-    }
-
-    .info-footer {
-      margin-top: auto;
-    }
-
-    .icon-big {
-      position: absolute;
-      bottom: -35%;
-      right: -10%;
-      transform: translate(-50%, -50%);
-      z-index: 1;
-    }
-
-    #video {
-      position: absolute;
-      top: 0;
-      left: 0%;
-      width: 120%;
-      height: 110%;
-      overflow: hidden;
-      z-index: 0;
-
-      video {
-        width: 110%;
+      #video {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 120%;
         height: 110%;
-        object-fit: cover;
+        overflow: hidden;
+        z-index: 0;
+
+        video {
+          width: 110%;
+          height: 110%;
+          object-fit: cover;
+        }
       }
-    }
-  </style>
+    </style>
+  </head>
   <body>
     <!-- video -->
     <div id="video">
