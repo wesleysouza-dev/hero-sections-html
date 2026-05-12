@@ -161,7 +161,7 @@ video {
     opacity: 1;
     z-index: 2;
     background: transparent;
-    mix-blend-mode: screen;
+    mix-blend-mode: multiply;
 }
 
 .text-insta {
