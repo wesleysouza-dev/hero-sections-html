@@ -161,7 +161,37 @@ video {
     opacity: 1;
     z-index: 2;
     background: transparent;
-    mix-blend-mode: multiply;
+}
+
+#hero-mobile {
+    display: none;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    max-width: 90%;
+    z-index: 2;
+
+    & img {
+        height: 96vh;
+        margin-left: -30px;
+        position: relative;
+        animation: zoomInOut 20s ease-in-out infinite;
+    }
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .text-insta {
@@ -583,6 +613,14 @@ video {
 
     .navbar.is-open .menu-toggle span:nth-child(3) {
         transform: translateY(-6px) rotate(-45deg);
+    }
+
+    video {
+        display: none;
+    }
+
+    #hero-mobile {
+        display: block;
     }
 
     .text-insta,
