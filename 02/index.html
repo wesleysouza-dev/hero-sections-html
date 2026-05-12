@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#2 - Hero Section</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="navbar">
+        <div class="navbar-inner">
+          <a class="brand" href="#" aria-label="Página inicial">
+            <svg
+              viewBox="0 0 60 27"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+            >
+              <path
+                d="M2 2h16.5l9.8 12L18.5 26H2l9.7-12zM42.5 2H59l-9.8 12L59 26H42.5l-9.7-12z"
+                fill="#000"
+              />
+            </svg>
+          </a>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="menu" aria-label="Navegação principal">
+            <div class="menu-left">
+              <a href="#">Generate Music</a>
+              <a href="#">License</a>
+              <a href="#">Pricing</a>
+              <a href="#">Api</a>
+              <a href="#">Business</a>
+            </div>
+
+            <div class="menu-right">
+              <a href="#">Sign In</a>
+              <a class="btn-cta" href="#">Start For Free</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <video muted loop autoplay preload="auto">
+        <source src="video-final.webm" type="video/webm" />
+      </video>
+
+      <div class="texts-top">
+        <div class="first-text" data-animate="words">
+          CREATE UNIQUE, ROYALTY-FREE<br />MUSIC IN SECONDS
+        </div>
+        <div class="second-text">
+          <div class="images">
+            <img
+              src="https://i.pravatar.cc/60?img=12"
+              alt="User avatar"
+              loading="lazy"
+            />
+            <img
+              src="https://i.pravatar.cc/60?img=19"
+              alt="User avatar"
+              loading="lazy"
+            />
+            <img
+              src="https://i.pravatar.cc/60?img=13"
+              alt="User avatar"
+              loading="lazy"
+            />
+          </div>
+          <div class="second-copy" data-animate="words">
+            TRUSTED BY 200,00 +USERS<br />-NO EXPERIENCE REQUIRED
+          </div>
+        </div>
+      </div>
+
+      <span class="text-insta">insta</span>
+      <span class="text-music">music</span>
+
+      <div class="footer">
+        <div class="wrapper">
+          <div class="card">
+            <div class="arrow">
+              <img
+                src="images/arrow.svg"
+                alt="Seta indicando para baixo"
+                width="50"
+                class="arrow-animated"
+              />
+            </div>
+
+            <div class="card-content">
+              <div class="top-row">
+                <div class="rec-btn">
+                  <div class="rec-dot"></div>
+                </div>
+
+                <div class="waveform" id="waveform"></div>
+              </div>
+
+              <div class="bottom-card">
+                <span class="cta-text">Start Composing Now – It's Free</span>
+                <div class="wave-icon">
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none">
+                    <rect
+                      x="0"
+                      y="6"
+                      width="3"
+                      height="6"
+                      rx="1.5"
+                      fill="#0e0e0e"
+                    />
+                    <rect
+                      x="4"
+                      y="3"
+                      width="3"
+                      height="12"
+                      rx="1.5"
+                      fill="#0e0e0e"
+                    />
+                    <rect
+                      x="8"
+                      y="0"
+                      width="3"
+                      height="18"
+                      rx="1.5"
+                      fill="#0e0e0e"
+                    />
+                    <rect
+                      x="12"
+                      y="3"
+                      width="3"
+                      height="12"
+                      rx="1.5"
+                      fill="#0e0e0e"
+                    />
+                    <rect
+                      x="16"
+                      y="6"
+                      width="3"
+                      height="6"
+                      rx="1.5"
+                      fill="#0e0e0e"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="musics-styles">
+            <img
+              src="images/send.svg"
+              alt="Send icon"
+              width="18"
+              class="image-send"
+            />
+            <ul>
+              <li>ELECTRONIC</li>
+              <li>PUNK ROCK</li>
+              <li>POP MUSIC</li>
+              <li>NEW WAVE</li>
+              <li>JAZZ</li>
+              <li>METAL</li>
+              <li>SOUL MUSIC</li>
+              <li>REGGAE</li>
+              <li>CLASSICAL</li>
+              <li>DISCO</li>
+              <li>HIP-HOP</li>
+              <li class="is-duplicate">ELECTRONIC</li>
+              <li class="is-duplicate">PUNK ROCK</li>
+              <li class="is-duplicate">POP MUSIC</li>
+              <li class="is-duplicate">NEW WAVE</li>
+              <li class="is-duplicate">JAZZ</li>
+              <li class="is-duplicate">METAL</li>
+              <li class="is-duplicate">SOUL MUSIC</li>
+              <li class="is-duplicate">REGGAE</li>
+              <li class="is-duplicate">CLASSICAL</li>
+              <li class="is-duplicate">DISCO</li>
+              <li class="is-duplicate">HIP-HOP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="shape-circle-1"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script>
+      const waveform = document.getElementById("waveform");
+      const heights = [
+        10, 14, 20, 28, 18, 30, 38, 26, 16, 22, 34, 40, 28, 18, 12, 24, 36, 42,
+        30, 20, 14, 26, 38, 32, 22, 16, 28, 40, 34, 24, 18, 30, 42, 36, 26, 20,
+        14, 22, 34, 28, 18, 12, 24, 38, 32, 22, 16, 10, 14, 20, 30, 24, 18, 28,
+        40, 34, 26, 20, 14, 22, 36, 30, 20, 14, 10, 18, 28, 38, 44, 32, 24, 16,
+        20, 34, 40, 30, 22, 16, 12, 26, 38, 32, 24, 18, 14, 28, 40, 36, 26, 20,
+        16, 30, 42, 36, 28, 22, 18, 32, 44, 38,
+      ];
+      const count = 80;
+
+      for (let i = 0; i < count; i++) {
+        const maxH = heights[i % heights.length];
+        const minH = Math.max(4, Math.round(maxH * 0.25));
+        const dur = (0.4 + Math.random() * 0.7).toFixed(2);
+        const delay = (Math.random() * 0.6).toFixed(2);
+        const bar = document.createElement("div");
+        bar.className = "bar";
+        bar.style.cssText = `--min-h:${minH}px;--max-h:${maxH}px;--dur:${dur}s;animation-delay:-${delay}s;height:${minH}px`;
+        waveform.appendChild(bar);
+      }
+
+      function wrapWords(element) {
+        if (!element) return;
+
+        const html = element.innerHTML;
+        const parts = html.split(/(<br\s*\/?\s*>)/gi);
+
+        const wrapped = parts
+          .map((part) => {
+            if (/^<br\s*\/?\s*>$/i.test(part)) return part;
+
+            return part
+              .trim()
+              .split(/\s+/)
+              .filter(Boolean)
+              .map((word) => `<span class="word">${word}</span>`)
+              .join(" ");
+          })
+          .join("");
+
+        element.innerHTML = wrapped;
+      }
+
+      function wrapChars(element) {
+        if (!element) return;
+
+        const text = element.textContent.trim();
+        element.innerHTML = text
+          .split("")
+          .map((char) => `<span class="char">${char}</span>`)
+          .join("");
+      }
+
+      const firstText = document.querySelector(".first-text");
+      const secondCopy = document.querySelector(".second-copy");
+      const header = document.querySelector(".navbar");
+      const avatars = document.querySelectorAll(".images img");
+      const insta = document.querySelector(".text-insta");
+      const music = document.querySelector(".text-music");
+      const footer = document.querySelector(".footer");
+      const heroVideo = document.querySelector("video");
+      const navbar = document.querySelector(".navbar");
+      const menuToggle = document.querySelector(".menu-toggle");
+
+      wrapWords(firstText);
+      wrapWords(secondCopy);
+      wrapChars(insta);
+      wrapChars(music);
+
+      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+      tl.from(header, {
+        y: -80,
+        opacity: 0,
+        duration: 0.75,
+      })
+        .from(
+          heroVideo,
+          {
+            opacity: 0,
+            duration: 1.2,
+          },
+          "-=0.5",
+        )
+        .from(
+          ".text-insta .char, .text-music .char",
+          {
+            y: 70,
+            opacity: 0,
+            duration: 0.5,
+            stagger: 0.035,
+          },
+          "-=0.05",
+        )
+        .from(
+          ".first-text .word",
+          {
+            y: 32,
+            opacity: 0,
+            duration: 0.45,
+            stagger: 0.07,
+          },
+          "-=0.1",
+        )
+        .from(
+          ".second-copy .word",
+          {
+            y: 28,
+            opacity: 0,
+            duration: 0.42,
+            stagger: 0.07,
+          },
+          "-=0.15",
+        )
+        .from(
+          avatars,
+          {
+            y: 14,
+            opacity: 0,
+            scale: 0.82,
+            duration: 0.32,
+            stagger: 0.16,
+          },
+          "-=0.2",
+        )
+        .from(
+          footer,
+          {
+            y: 90,
+            opacity: 0,
+            duration: 0.75,
+          },
+          "-=0.15",
+        );
+
+      if (menuToggle && navbar) {
+        menuToggle.addEventListener("click", () => {
+          const isOpen = navbar.classList.toggle("is-open");
+          menuToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+      }
+    </script>
+    <script>
+      // Controla visibilidade dos itens duplicados via matchMedia
+      const duplicates = document.querySelectorAll(
+        ".musics-styles li.is-duplicate",
+      );
+      const mq = window.matchMedia("(max-width: 768px)");
+      const toggleDuplicates = (e) => {
+        duplicates.forEach((li) => {
+          li.style.display = e.matches ? "" : "none";
+        });
+      };
+      toggleDuplicates(mq);
+      mq.addEventListener("change", toggleDuplicates);
+    </script>
+  </body>
+</html>
