@@ -264,7 +264,7 @@ video {
     z-index: 2;
 
     & img {
-        height: 96vh;
+        height: 100vh;
         margin-left: -30px;
         position: relative;
         animation: zoomInOut 20s ease-in-out infinite;
