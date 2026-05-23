@@ -616,7 +616,7 @@ button {
 
   .hero__back-title {
     top: 9vh;
-    font-size: clamp(4rem, 25vw, 7rem);
+    font-size: clamp(4rem, 25vw, 5rem);
   }
 
   .hero__player {
